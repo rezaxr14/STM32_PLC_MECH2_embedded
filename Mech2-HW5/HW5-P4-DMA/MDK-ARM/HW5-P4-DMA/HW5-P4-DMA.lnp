@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"hw5-p4-dma\startup_stm32f103xe.o"
+"hw5-p4-dma\main.o"
+"hw5-p4-dma\stm32f1xx_it.o"
+"hw5-p4-dma\stm32f1xx_hal_msp.o"
+"hw5-p4-dma\stm32f1xx_hal_gpio_ex.o"
+"hw5-p4-dma\stm32f1xx_hal_adc.o"
+"hw5-p4-dma\stm32f1xx_hal_adc_ex.o"
+"hw5-p4-dma\stm32f1xx_hal.o"
+"hw5-p4-dma\stm32f1xx_hal_rcc.o"
+"hw5-p4-dma\stm32f1xx_hal_rcc_ex.o"
+"hw5-p4-dma\stm32f1xx_hal_gpio.o"
+"hw5-p4-dma\stm32f1xx_hal_dma.o"
+"hw5-p4-dma\stm32f1xx_hal_cortex.o"
+"hw5-p4-dma\stm32f1xx_hal_pwr.o"
+"hw5-p4-dma\stm32f1xx_hal_flash.o"
+"hw5-p4-dma\stm32f1xx_hal_flash_ex.o"
+"hw5-p4-dma\stm32f1xx_hal_exti.o"
+"hw5-p4-dma\stm32f1xx_hal_uart.o"
+"hw5-p4-dma\system_stm32f1xx.o"
+--strict --scatter "HW5-P4-DMA\HW5-P4-DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HW5-P4-DMA.map" -o HW5-P4-DMA\HW5-P4-DMA.axf

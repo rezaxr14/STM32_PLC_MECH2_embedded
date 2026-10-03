@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"hw2-p3\startup_stm32f103xe.o"
+"hw2-p3\main.o"
+"hw2-p3\stm32f1xx_it.o"
+"hw2-p3\stm32f1xx_hal_msp.o"
+"hw2-p3\lcd.o"
+"hw2-p3\stm32f1xx_hal_gpio_ex.o"
+"hw2-p3\stm32f1xx_hal.o"
+"hw2-p3\stm32f1xx_hal_rcc.o"
+"hw2-p3\stm32f1xx_hal_rcc_ex.o"
+"hw2-p3\stm32f1xx_hal_gpio.o"
+"hw2-p3\stm32f1xx_hal_dma.o"
+"hw2-p3\stm32f1xx_hal_cortex.o"
+"hw2-p3\stm32f1xx_hal_pwr.o"
+"hw2-p3\stm32f1xx_hal_flash.o"
+"hw2-p3\stm32f1xx_hal_flash_ex.o"
+"hw2-p3\stm32f1xx_hal_exti.o"
+"hw2-p3\system_stm32f1xx.o"
+--strict --scatter "hw2-p3\hw2-p3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hw2-p3.map" -o hw2-p3\hw2-p3.axf

@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"hw1-p3\startup_stm32f103xe.o"
+"hw1-p3\main.o"
+"hw1-p3\stm32f1xx_it.o"
+"hw1-p3\stm32f1xx_hal_msp.o"
+"hw1-p3\stm32f1xx_hal_gpio_ex.o"
+"hw1-p3\stm32f1xx_hal.o"
+"hw1-p3\stm32f1xx_hal_rcc.o"
+"hw1-p3\stm32f1xx_hal_rcc_ex.o"
+"hw1-p3\stm32f1xx_hal_gpio.o"
+"hw1-p3\stm32f1xx_hal_dma.o"
+"hw1-p3\stm32f1xx_hal_cortex.o"
+"hw1-p3\stm32f1xx_hal_pwr.o"
+"hw1-p3\stm32f1xx_hal_flash.o"
+"hw1-p3\stm32f1xx_hal_flash_ex.o"
+"hw1-p3\stm32f1xx_hal_exti.o"
+"hw1-p3\system_stm32f1xx.o"
+--strict --scatter "HW1-P3\HW1-P3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HW1-P3.map" -o HW1-P3\HW1-P3.axf

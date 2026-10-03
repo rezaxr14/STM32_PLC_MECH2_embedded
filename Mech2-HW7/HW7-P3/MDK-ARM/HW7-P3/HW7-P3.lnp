@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"hw7-p3\startup_stm32f103xe.o"
+"hw7-p3\main.o"
+"hw7-p3\stm32f1xx_it.o"
+"hw7-p3\stm32f1xx_hal_msp.o"
+"hw7-p3\stm32f1xx_hal_gpio_ex.o"
+"hw7-p3\stm32f1xx_hal_adc.o"
+"hw7-p3\stm32f1xx_hal_adc_ex.o"
+"hw7-p3\stm32f1xx_hal.o"
+"hw7-p3\stm32f1xx_hal_rcc.o"
+"hw7-p3\stm32f1xx_hal_rcc_ex.o"
+"hw7-p3\stm32f1xx_hal_gpio.o"
+"hw7-p3\stm32f1xx_hal_dma.o"
+"hw7-p3\stm32f1xx_hal_cortex.o"
+"hw7-p3\stm32f1xx_hal_pwr.o"
+"hw7-p3\stm32f1xx_hal_flash.o"
+"hw7-p3\stm32f1xx_hal_flash_ex.o"
+"hw7-p3\stm32f1xx_hal_exti.o"
+"hw7-p3\stm32f1xx_hal_tim.o"
+"hw7-p3\stm32f1xx_hal_tim_ex.o"
+"hw7-p3\system_stm32f1xx.o"
+--strict --scatter "HW7-P3\HW7-P3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HW7-P3.map" -o HW7-P3\HW7-P3.axf

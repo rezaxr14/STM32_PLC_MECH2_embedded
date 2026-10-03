@@ -1,0 +1,52 @@
+# --- Mech2: regenerable CubeMX HAL / CMSIS ---
+# STM32CubeMX generated HAL + CMSIS — regenerable from .ioc, do not track.
+# Covers e.g. Mech2-HW1/HW1-P1/p1/Drivers, Mech2-HW2/hw2-p1/Drivers, exam/1/Drivers, etc.
+**/Drivers/
+
+# --- Large submission archives in project root (keep repo under GitHub limits) ---
+# Root contains ~300MB of *.zip/*.rar submissions (e.g. HW1.zip 108MB).
+# Kept locally, NOT pushed. Only ignore at root (leading /) so nested archives stay tracked if needed.
+/*.zip
+/*.rar
+/*.7z
+# Exception: tiny shared Proteus library — intentionally tracked.
+!LCD_LIB.rar
+
+# --- Keil MDK-ARM build outputs ---
+# Tracked on purpose: *.hex (flash / Proteus load), *.axf (ELF), linker aux
+# (*.map, *.htm, *.lnp, *.sct, *.dep). Ignored: object/dependency intermediates.
+**/MDK-ARM/**/Listings/
+**/MDK-ARM/**/Objects/
+**/MDK-ARM/RTE/
+*.o
+*.d
+*.crf
+*.bin
+!*.hex
+!*.axf
+!*.map
+!*.htm
+!*.lnp
+!*.sct
+!*.dep
+*.uvguix.*
+*.uvoptx
+*.uvprojx.bak
+*.sct.bak
+
+# --- Proteus simulation backups ---
+**/Proteus/Project Backups/
+**/Project Backups/
+*.pdsbak
+*.pdsprj.*.workspace
+
+# --- STM32CubeMX cache / backups ---
+.mxcubemx/
+*.mxproject.bak
+*.ioc.bak
+
+# --- OS / Editor ---
+Thumbs.db
+desktop.ini
+.vscode/
+*.code-workspace
