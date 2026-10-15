@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "STM32 and PLC Coursework for Mechatronics 2"
+type: software
+authors:
+  - given-names: "Reza"
+    family-names: "Nadimi"
+    affiliation: "University of Tehran"
+repository-code: "https://github.com/rezaxr14/STM32_PLC_MECH2_embedded"
+license: CC-BY-4.0
+year: 2026
